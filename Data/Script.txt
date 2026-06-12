@@ -1,0 +1,43 @@
+Bonjour à tous,
+
+Dans cette démo, je vais vous faire voir comment la nouvelle classe 'Method' de 4D 21 R3 vous permet notamment de rendre vos applications déployées plus adaptables que jamais.
+Nous allons nous baser sur une application de démonstration que vous connaissez tous : Invoices.
+Pour rappel, cette petite application disponible sur GitHub gère des données de facturation. On peut voir la liste des clients, des produits et des factures avec leurs lignes.
+
+Dans cette application, j'ai ajouté un dialogue permettant de gérer du code 4D en vue de l'exécuter. Ce dialogue a été entièrement "Vibe-Codé" avec de l'IA. On peut taper du code 4D. Ensuite ont peut vérifier la syntaxe du code pour éviter des erreurs, et enfin l'exécuter.
+Quand j'ouvre le projet de l'application dans VS Code, on peut voir le code derrière les boutons dans la classe du formulaire. On voit ici la création d'un objet 'Method' à partir de la zone de saisie, puis l'appel à la fonction 'checkSyntax'. Ensuite, on voit l'exécution du code avec la fonction 'Call'.
+Bien évidement, dans vos applications, je vous conseille de sécuriser l'accès à un dialogue comme celui-ci, afin d'éviter des opérations non désirées.
+
+L'application Invoices en cours d'exécution ici est une application "buildée", donc compilée. On peut imaginer que cette application est déployée et en cours d'utilisation par des utilisateurs finaux.
+
+Le cas d'usage présenté dans cette démo est simple, vous l'avez certainement déjà rencontré. Personnellement, cela m'est souvent arrivé, quand j'étais développeur 4D ! Un client vous appelle et a un besoin urgent d'une statistique ou d'une extraction de données, que vous n'aviez pas prévu dans votre application. Vous pourriez développer sa demande dans l'application, mais les délais de test, build et déploiement sont trop longs.
+
+Nous allons donc créer du code 4D permettant de faire cette statistique, et l'envoyer directement au client. Dans VS Code, je demande simplement à Copilot la statistique voulue.
+
+Je veux que tu génère du code 4D dans un fichier 4DM placé sur le bureau.  Le code doit générer un fichier Excel placé sur le bureau et contenant des statistiques.
+Je veux lister les produits facturés. Je veux que les produits ayant généré le plus de marge apparaissent en premier.
+
+Copilot analyse le projet et génère le code.
+Ok. Je retourne dans mon application Invoices.
+J'ouvre le fichier généré. Je vérifie la syntaxe : c'est bon. Je lance l'exécution, qui ouvre Excel avec le fichier généré.
+Ça a l'air bien ! Les produits sont bien ordonnés par marge.
+
+Ah oui, mais je ne veux pas les colonnes avec les taxes.
+Je demande donc la rectification à Copilot.
+
+Je retourne dans Invoices, j'ouvre le code, et je l'exécute.
+C'est mieux maintenant ! Ah mais non, mon client veux un tri sur le taux de marge et non pas sur la marge globale. Et il voulait uniquement les 50 meilleurs clients.
+Je relance donc une requête dans Copilot.
+OK, le tableau est parfait maintenant. Je peux lui envoyer le fichier pour qu'il l'exécute sur son application en production !
+
+Le client m'a demandé un autre tableau : la liste des meilleurs clients avec leurs revenus annuels.
+Encore une fois, l'IA va me générer le code adéquat.
+Je l'ouvre dans Invoices.
+Ah, je voulais vous faire voir un autre truc sympa avce la classe 'Method', c'est le debug, même dans une application compilée ! Je rajoute un 'TRACE', et j'exécute le code. On voit le debugger apparâitre, et je peux inspecter l'exécution comme dans 4D ! C'est très utile pour mettre au point le code !
+
+Enfin, je vais demander à l'IA de "mettre un coup de beau" sur le tableau !
+
+J'ouvre le code modifié, je l'exécute, puis ouvre le fichier Excel généré.
+C'est impressionnant, n'est-ce pas ?
+
+Voilà pour cette démo de la classe "Method" introduite dans 4D 21 R3. Elle peut vous ouvrir des perspectives intéressantes en permettant, selon vos besoins, de modifier des règles métier, patcher du code, faire des opérations de maintenance sur les données, ou comme dans cette démo, extraire des données. Et tout ceci sans avoir besoin de faire de mise à jour de l'application déployée ! C'est vraiment fantastique, non ?

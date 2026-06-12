@@ -1,0 +1,1 @@
+action_Delete(Form.selectedSubset; "Selection")

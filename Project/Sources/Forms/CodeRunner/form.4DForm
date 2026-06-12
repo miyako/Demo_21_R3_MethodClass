@@ -1,0 +1,281 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 700,
+	"windowMinHeight": 560,
+	"windowTitle": "Code Runner - 4D.Method",
+	"rightMargin": 0,
+	"bottomMargin": 6,
+	"markerHeader": 15,
+	"markerBody": 520,
+	"markerBreak": 540,
+	"markerFooter": 560,
+	"formClass": "FC_CodeRunner",
+	"method": "method.4dm",
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Label_Code": {
+					"type": "text",
+					"top": 15,
+					"left": 15,
+					"width": 200,
+					"height": 16,
+					"stroke": "#696969",
+					"class": "Texts13N",
+					"fontWeight": "bold",
+					"text": "Source code"
+				},
+				"Rect_Code": {
+					"type": "rectangle",
+					"top": 37,
+					"left": 15,
+					"width": 420,
+					"height": 266,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FAFAFA",
+					"stroke": "#D8DCE3",
+					"strokeWidth": 2,
+					"borderRadius": 5
+				},
+				"_CODE_INPUT_": {
+					"type": "input",
+					"top": 41,
+					"left": 20,
+					"width": 410,
+					"height": 258,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.sourceCode",
+					"class": "Texts13N",
+					"fontFamily": "Menlo",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"multiline": "yes",
+					"wordwrap": "automatic",
+					"contextMenu": "automatic",
+					"placeholder": "Enter your 4D code here...",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"_BTN_OPEN_FILE_": {
+					"type": "button",
+					"top": 37,
+					"left": 445,
+					"width": 115,
+					"height": 36,
+					"sizingX": "move",
+					"tooltip": "Open a code file",
+					"class": "Texts12N",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fill": "#607D8B",
+					"focusable": false,
+					"text": "Open...",
+					"style": "flat",
+					"method": "ObjectMethods/_BTN_OPEN_FILE_.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"_BTN_SAVE_FILE_": {
+					"type": "button",
+					"top": 37,
+					"left": 570,
+					"width": 115,
+					"height": 36,
+					"sizingX": "move",
+					"tooltip": "Save code to file",
+					"class": "Texts12N",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fill": "#607D8B",
+					"focusable": false,
+					"text": "Save...",
+					"style": "flat",
+					"method": "ObjectMethods/_BTN_SAVE_FILE_.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"_BTN_CHECK_": {
+					"type": "button",
+					"top": 83,
+					"left": 445,
+					"width": 240,
+					"height": 36,
+					"sizingX": "move",
+					"tooltip": "Check syntax of the code",
+					"class": "Texts12N",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fill": "#4CAF50",
+					"focusable": false,
+					"text": "Check Syntax",
+					"style": "flat",
+					"method": "ObjectMethods/_BTN_CHECK_.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"_BTN_EXECUTE_": {
+					"type": "button",
+					"top": 129,
+					"left": 445,
+					"width": 240,
+					"height": 36,
+					"sizingX": "move",
+					"tooltip": "Execute the code",
+					"class": "Texts12N",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fill": "#1E90FF",
+					"focusable": false,
+					"text": "Execute",
+					"style": "flat",
+					"method": "ObjectMethods/_BTN_EXECUTE_.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"_BTN_CLEAR_": {
+					"type": "button",
+					"top": 175,
+					"left": 445,
+					"width": 115,
+					"height": 36,
+					"sizingX": "move",
+					"tooltip": "Clear all fields",
+					"class": "Texts12N",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fill": "#FF9800",
+					"focusable": false,
+					"text": "Clear",
+					"style": "flat",
+					"method": "ObjectMethods/_BTN_CLEAR_.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"_BTN_CLOSE_": {
+					"type": "button",
+					"top": 175,
+					"left": 570,
+					"width": 115,
+					"height": 36,
+					"sizingX": "move",
+					"tooltip": "Close dialog",
+					"action": "cancel",
+					"class": "Texts12N",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fill": "#777777",
+					"focusable": false,
+					"text": "Close",
+					"style": "flat",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rect_Status": {
+					"type": "rectangle",
+					"top": 221,
+					"left": 445,
+					"width": 240,
+					"height": 82,
+					"sizingX": "move",
+					"fill": "#F5F5F5",
+					"stroke": "#D8DCE3",
+					"strokeWidth": 2,
+					"borderRadius": 5
+				},
+				"Label_Status": {
+					"type": "text",
+					"top": 225,
+					"left": 455,
+					"width": 220,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#696969",
+					"class": "Texts11N",
+					"fontWeight": "bold",
+					"text": "Status:"
+				},
+				"_STATUS_": {
+					"type": "input",
+					"top": 243,
+					"left": 455,
+					"width": 220,
+					"height": 56,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.statusText",
+					"class": "Texts11N",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"multiline": "yes",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Label_Result": {
+					"type": "text",
+					"top": 313,
+					"left": 15,
+					"width": 200,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#696969",
+					"class": "Texts13N",
+					"fontWeight": "bold",
+					"text": "Result"
+				},
+				"Rect_Result": {
+					"type": "rectangle",
+					"top": 335,
+					"left": 15,
+					"width": 670,
+					"height": 170,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "#F8F8F0",
+					"stroke": "#D8DCE3",
+					"strokeWidth": 2,
+					"borderRadius": 5
+				},
+				"_RESULT_OUTPUT_": {
+					"type": "input",
+					"top": 339,
+					"left": 20,
+					"width": 660,
+					"height": 162,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.resultOutput",
+					"class": "Texts13N",
+					"fontFamily": "Menlo",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"multiline": "yes",
+					"enterable": false,
+					"contextMenu": "automatic",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		}
+	]
+}

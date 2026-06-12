@@ -1,0 +1,18 @@
+I want you to generate 4D code in a 4dm file placed on the desktop. The code shall 
+ generate an Excel file (placed on the desktop) containing statistics.
+I want to list the invoiced products. I want the products that generated the most margin to appear first.
+
+Remove the taxes.
+
+I want the table to be sorted by margin rate.
+
+List only the Top 50.
+
+
+
+I want you to generate 4D code in a 4dm file placed on the desktop. The code shall 
+ generate an Excel file (placed on the desktop) containing statistics.
+
+I want to list my best customers, with annual revenue in columns.
+
+Improve table appearance with colors highlighting revenues evolution.
