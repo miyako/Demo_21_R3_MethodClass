@@ -1,0 +1,14 @@
+text
+{
+   stroke: #FFFFFF;   
+}
+
+@media (prefers-color-scheme: light) {
+   text {
+      stroke: #555555;   
+   }
+}
+
+button {
+   stroke: automatic;  
+}

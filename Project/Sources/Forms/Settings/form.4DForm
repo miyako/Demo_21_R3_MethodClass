@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
@@ -9,6 +9,9 @@
 	"markerBody": 200,
 	"markerBreak": 220,
 	"markerFooter": 240,
+	"css": [
+		"Settings.css"
+	],
 	"events": [
 		"onLoad",
 		"onValidate",
@@ -25,7 +28,6 @@
 		"paperHeight": "595pt"
 	},
 	"pages": [
-		null,
 		{
 			"objects": {
 				"Round Rectangle3": {
@@ -36,8 +38,9 @@
 					"height": 340,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
+					"stroke": "transparent",
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"Round Rectangle2": {
 					"type": "rectangle",
@@ -47,20 +50,14 @@
 					"height": 340,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
-				},
-				"_TABLE_INVOICES_2": {
-					"type": "rectangle",
-					"top": 117,
-					"left": 812,
-					"width": 92,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
+					"stroke": "transparent",
+					"borderRadius": 5,
+					"fill": "automatic"
+				}
+			}
+		},
+		{
+			"objects": {
 				"_BUT_OK_": {
 					"type": "button",
 					"top": 393,
@@ -74,7 +71,6 @@
 					},
 					"class": "Texts11N",
 					"textAlign": "center",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:OK",
 					"icon": "/RESOURCES/Images/Buttons/LightGreySmall/Validate.png",
@@ -99,7 +95,6 @@
 					"action": "cancel",
 					"class": "Texts11N",
 					"textAlign": "center",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Cancel",
 					"icon": "/RESOURCES/Images/Buttons/LightGreySmall/Cancel.png",
@@ -109,27 +104,16 @@
 						"onClick"
 					]
 				},
-				"Round Rectangle4": {
-					"type": "rectangle",
-					"top": 335,
-					"left": 20,
-					"width": 248,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
 				"_PROP_NAME_": {
 					"type": "input",
 					"top": 339,
-					"left": 28,
-					"width": 236,
+					"left": 20,
+					"width": 275,
 					"height": 16,
 					"dataSource": "Form:C1466.settings.Company.Name",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"placeholder": "Enter the Name of the Property",
 					"dragging": "none",
@@ -137,7 +121,9 @@
 					"events": [
 						"onLosingFocus",
 						"onDataChange"
-					]
+					],
+					"hideFocusRing": true,
+					"borderRadius": 0
 				},
 				"Text4": {
 					"type": "text",
@@ -145,7 +131,6 @@
 					"left": 19,
 					"width": 134,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"fontWeight": "bold",
 					"text": ":xliff:CompLogo"
@@ -156,7 +141,6 @@
 					"left": 631,
 					"width": 174,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:InvoiceNumber"
@@ -181,7 +165,7 @@
 					"dataSourceTypeHint": "number",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -209,16 +193,6 @@
 						"onDataChange"
 					]
 				},
-				"_NOPIC_5": {
-					"type": "rectangle",
-					"top": 72,
-					"left": 19,
-					"width": 277,
-					"height": 191,
-					"fill": "#EEF1F8",
-					"stroke": "#D8DCE3",
-					"borderRadius": 12
-				},
 				"_NOPIC_": {
 					"type": "picture",
 					"top": 96,
@@ -234,41 +208,10 @@
 					"left": 43,
 					"width": 229,
 					"height": 16,
-					"stroke": "#5463C3",
 					"class": "Texts13N",
 					"textAlign": "center",
 					"fontWeight": "bold",
 					"text": ":xliff:Drag and Drop"
-				},
-				"_ADDPIC_4": {
-					"type": "picture",
-					"top": 263,
-					"left": 69,
-					"width": 177,
-					"height": 26,
-					"pictureFormat": "scaled",
-					"picture": "Images/_ADDPIC_4.png"
-				},
-				"_ADDPIC_3": {
-					"type": "button",
-					"top": 263,
-					"left": 79,
-					"width": 156,
-					"height": 24,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Picture"
-					},
-					"stroke": "#FFFFFF",
-					"focusable": false,
-					"text": ":xliff:Add a Picture",
-					"icon": "/RESOURCES/Images/Illu_smallimg.png",
-					"textPlacement": "right",
-					"style": "custom",
-					"customBorderX": 10,
-					"method": "ObjectMethods/_ADDPIC_3.4dm",
-					"events": [
-						"onClick"
-					]
 				},
 				"_FIELD_Picture_": {
 					"type": "input",
@@ -279,7 +222,7 @@
 					"dataSource": "Form:C1466.settings.Company.Logo",
 					"dataSourceTypeHint": "picture",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"pictureFormat": "proportionalCenter",
 					"dragging": "none",
 					"dropping": "custom",
@@ -295,7 +238,6 @@
 					"left": 20,
 					"width": 134,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"fontWeight": "bold",
 					"text": ":xliff:CompName"
@@ -308,8 +250,9 @@
 					"height": 340,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
+					"stroke": "transparent",
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"Text2": {
 					"type": "text",
@@ -317,7 +260,6 @@
 					"left": 325,
 					"width": 134,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"fontWeight": "bold",
 					"text": ":xliff:OptionsList"
@@ -328,7 +270,6 @@
 					"left": 631,
 					"width": 134,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"fontWeight": "bold",
 					"text": ":xliff:OptionsList"
@@ -416,7 +357,6 @@
 					"left": 325,
 					"width": 134,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"fontWeight": "bold",
 					"text": ":xliff:Behavior"
@@ -462,24 +402,12 @@
 						"onDataChange"
 					]
 				},
-				"_TABLE_INVOICES_3": {
-					"type": "rectangle",
-					"top": 154,
-					"left": 812,
-					"width": 92,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
 				"_TABLE_INVOICES_4": {
 					"type": "text",
 					"top": 159,
 					"left": 631,
 					"width": 174,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:ProFormaNumber"
@@ -494,23 +422,12 @@
 					"dataSourceTypeHint": "number",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
 						"onDataChange"
 					]
-				},
-				"_TABLE_INVOICES_6": {
-					"type": "rectangle",
-					"top": 191,
-					"left": 812,
-					"width": 92,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
 				},
 				"_TABLE_INVOICES_7": {
 					"type": "text",
@@ -518,7 +435,6 @@
 					"left": 631,
 					"width": 174,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:QuoteNumber"
@@ -533,23 +449,12 @@
 					"dataSourceTypeHint": "number",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
 						"onDataChange"
 					]
-				},
-				"_TABLE_INVOICES_9": {
-					"type": "rectangle",
-					"top": 117,
-					"left": 812,
-					"width": 92,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
 				},
 				"_TABLE_INVOICES_10": {
 					"type": "text",
@@ -557,7 +462,6 @@
 					"left": 631,
 					"width": 174,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:InvoiceNumber"
@@ -571,23 +475,12 @@
 					"dataSource": "Form:C1466.settings.Invoices.lastInvoiceNumber",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
 						"onDataChange"
 					]
-				},
-				"_TABLE_INVOICES_12": {
-					"type": "rectangle",
-					"top": 154,
-					"left": 812,
-					"width": 92,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
 				},
 				"_TABLE_INVOICES_13": {
 					"type": "text",
@@ -595,7 +488,6 @@
 					"left": 631,
 					"width": 174,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:ProFormaNumber"
@@ -609,23 +501,12 @@
 					"dataSource": "Form:C1466.settings.Invoices.lastProFormaNumber",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
 						"onDataChange"
 					]
-				},
-				"_TABLE_INVOICES_15": {
-					"type": "rectangle",
-					"top": 191,
-					"left": 812,
-					"width": 92,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
 				},
 				"_TABLE_INVOICES_16": {
 					"type": "text",
@@ -633,7 +514,6 @@
 					"left": 631,
 					"width": 174,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:QuoteNumber"
@@ -647,23 +527,12 @@
 					"dataSource": "Form:C1466.settings.Invoices.lastQuoteNumber",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
 						"onDataChange"
 					]
-				},
-				"_TABLE_CLIENTS_2": {
-					"type": "rectangle",
-					"top": 117,
-					"left": 812,
-					"width": 92,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
 				},
 				"_TABLE_CLIENTS_": {
 					"type": "text",
@@ -671,7 +540,6 @@
 					"left": 631,
 					"width": 174,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:DefaultCountry"
@@ -685,23 +553,12 @@
 					"dataSource": "Form:C1466.settings.Clients.defaultCountry",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
 						"onDataChange"
 					]
-				},
-				"_TABLE_CLIENTS_5": {
-					"type": "rectangle",
-					"top": 154,
-					"left": 812,
-					"width": 92,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
 				},
 				"_TABLE_CLIENTS_3": {
 					"type": "text",
@@ -709,7 +566,6 @@
 					"left": 631,
 					"width": 174,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:DefaultDiscount"
@@ -724,7 +580,7 @@
 					"dataSourceTypeHint": "number",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"numberFormat": {
 						"$ref": "/SOURCES/filters.json#/Percent"
@@ -734,24 +590,12 @@
 						"onDataChange"
 					]
 				},
-				"_TABLE_PRODUCTS_2": {
-					"type": "rectangle",
-					"top": 117,
-					"left": 812,
-					"width": 92,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
 				"_TABLE_PRODUCTS_": {
 					"type": "text",
 					"top": 122,
 					"left": 631,
 					"width": 174,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:DefaultTax"
@@ -766,7 +610,7 @@
 					"dataSourceTypeHint": "number",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"numberFormat": {
 						"$ref": "/SOURCES/filters.json#/Percent"
@@ -775,73 +619,97 @@
 					"events": [
 						"onDataChange"
 					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 277,
+					"left": 69,
+					"width": 177,
+					"height": 26,
+					"borderRadius": 4,
+					"fill": "automatic",
+					"stroke": "automatic"
+				},
+				"_ADDPIC_3": {
+					"type": "button",
+					"top": 277,
+					"left": 69,
+					"width": 177,
+					"height": 24,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Picture"
+					},
+					"focusable": false,
+					"text": ":xliff:Add a Picture",
+					"icon": "/RESOURCES/Images/Illu_smallimg.png",
+					"textPlacement": "right",
+					"style": "custom",
+					"customBorderX": 10,
+					"method": "ObjectMethods/_ADDPIC_3.4dm",
+					"events": [
+						"onClick"
+					],
+					"imageHugsTitle": true,
+					"textAlign": "center"
 				}
 			}
 		}
 	],
 	"editor": {
-		"groups": {
-			"Group3": [
-				"_NOPIC_5",
-				"_NOPIC_",
-				"_NOPIC_1"
-			],
-			"Group2": [
-				"_ADDPIC_4",
-				"_ADDPIC_3"
-			]
-		},
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {},
 			"View 2": {
-				"selectable": false,
 				"objects": [
 					"Round Rectangle2",
-					"_TABLE_INVOICES_2",
 					"_TABLE_INVOICES_",
 					"_TABLE_INVOICES_1",
-					"_TABLE_INVOICES_3",
 					"_TABLE_INVOICES_4",
 					"_TABLE_INVOICES_5",
-					"_TABLE_INVOICES_6",
 					"_TABLE_INVOICES_7",
 					"_TABLE_INVOICES_8",
-					"_TABLE_INVOICES_9",
 					"_TABLE_INVOICES_10",
 					"_TABLE_INVOICES_11",
-					"_TABLE_INVOICES_12",
 					"_TABLE_INVOICES_13",
 					"_TABLE_INVOICES_14",
-					"_TABLE_INVOICES_15",
 					"_TABLE_INVOICES_16",
 					"_TABLE_INVOICES_17"
 				]
 			},
 			"View 3": {
-				"selectable": false,
 				"objects": [
-					"_TABLE_CLIENTS_2",
 					"_TABLE_CLIENTS_",
 					"_TABLE_CLIENTS_1",
-					"_TABLE_CLIENTS_5",
 					"_TABLE_CLIENTS_3",
 					"_TABLE_CLIENTS_4"
 				]
 			},
 			"View 4": {
 				"objects": [
-					"_TABLE_PRODUCTS_2",
 					"_TABLE_PRODUCTS_",
 					"_TABLE_PRODUCTS_1"
 				]
 			},
-			"View 5": {},
+			"View 5": {
+				"objects": [
+					"_NOPIC_",
+					"_NOPIC_1"
+				]
+			},
 			"View 6": {},
-			"View 7": {},
+			"View 7": {
+				"objects": [
+					"_FIELD_Picture_"
+				]
+			},
 			"View 8": {},
 			"View 9": {}
 		}
-	}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 84
 }
