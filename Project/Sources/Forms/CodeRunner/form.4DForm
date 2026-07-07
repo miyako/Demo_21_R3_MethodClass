@@ -31,8 +31,7 @@
 					"width": 200,
 					"height": 16,
 					"class": "Texts13N",
-					"fontWeight": "bold",
-					"text": "Source code"
+					"fontWeight": "bold"
 				},
 				"_CODE_INPUT_": {
 					"type": "input",
@@ -75,7 +74,6 @@
 					"class": "Texts12N",
 					"textAlign": "center",
 					"focusable": false,
-					"text": "Check Syntax",
 					"style": "flat",
 					"method": "ObjectMethods/_BTN_CHECK_.4dm",
 					"events": [
@@ -93,7 +91,6 @@
 					"class": "Texts12N",
 					"textAlign": "center",
 					"focusable": false,
-					"text": "Execute",
 					"style": "flat",
 					"method": "ObjectMethods/_BTN_EXECUTE_.4dm",
 					"events": [
@@ -109,7 +106,6 @@
 					"sizingY": "move",
 					"class": "Texts13N",
 					"fontWeight": "bold",
-					"text": "Result",
 					"sizingX": "move"
 				},
 				"_RESULT_OUTPUT_": {
@@ -141,7 +137,6 @@
 					"sizingY": "move",
 					"class": "Texts13N",
 					"fontWeight": "bold",
-					"text": "Status",
 					"sizingX": "move"
 				},
 				"_STATUS_": {

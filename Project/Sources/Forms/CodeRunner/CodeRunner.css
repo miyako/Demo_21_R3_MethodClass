@@ -1,3 +1,20 @@
+#_BTN_CHECK_ {
+   text: "シンタックスチェック"
+}
+#_BTN_EXECUTE_ {
+   text: "メソッド実行"
+}
+#Label_Code {
+   text: "ソースコード"
+}
+#Label_Status {
+   text: "シンタックス判定";
+   font-size: 11;   
+}
+#Label_Result {
+   text: "メソッド実行結果";
+   font-size: 11;     
+}
 #_BTN_OPEN_FILE_ {
    fill: #37474F;   
 }
