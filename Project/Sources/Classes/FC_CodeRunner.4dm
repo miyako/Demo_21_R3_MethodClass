@@ -10,18 +10,16 @@ Class constructor
 	This.resultOutput:=""
 	This.statusText:="Ready"
 	
-	
 	//MARK: - Form & form objects event handlers
 	
 Function formEventHandler($formEventCode : Integer)
 	
 	Case of 
 		: ($formEventCode=On Load)
-			
+			Form._update()
 		: ($formEventCode=On Unload)
 			
 	End case 
-	
 	
 Function btnOpenFileEventHandler($formEventCode : Integer)
 	
@@ -30,14 +28,12 @@ Function btnOpenFileEventHandler($formEventCode : Integer)
 			This._openFile()
 	End case 
 	
-	
 Function btnSaveFileEventHandler($formEventCode : Integer)
 	
 	Case of 
 		: ($formEventCode=On Clicked)
 			This._saveFile()
 	End case 
-	
 	
 Function btnCheckEventHandler($formEventCode : Integer)
 	
@@ -46,14 +42,12 @@ Function btnCheckEventHandler($formEventCode : Integer)
 			This._checkSyntax()
 	End case 
 	
-	
 Function btnExecuteEventHandler($formEventCode : Integer)
 	
 	Case of 
 		: ($formEventCode=On Clicked)
 			This._execute()
 	End case 
-	
 	
 Function btnClearEventHandler($formEventCode : Integer)
 	
@@ -62,6 +56,58 @@ Function btnClearEventHandler($formEventCode : Integer)
 			This._clear()
 	End case 
 	
+Function inputCodeEventHandler($formEventCode : Integer) : Integer
+	
+	Case of 
+		: ($formEventCode=On Clicked) && (Contextual click)
+			
+			var $menu:=Create menu
+			APPEND MENU ITEM($menu; "show"; *)
+			SET MENU ITEM PARAMETER($menu; -1; "show-code")
+			APPEND MENU ITEM($menu; "claude"; *)
+			SET MENU ITEM PARAMETER($menu; -1; "launch-claude")
+			APPEND MENU ITEM($menu; "-")
+			APPEND MENU ITEM($menu; "clear"; *)
+			SET MENU ITEM PARAMETER($menu; -1; "clear-code")
+			
+			var $command:=Dynamic pop up menu($menu)
+			RELEASE MENU($menu)
+			
+			Case of 
+				: ($command="")
+				: ($command="launch-claude")
+					This._claude()
+				: ($command="show-code")
+					This._show()
+				: ($command="clear-code")
+					This.btnClearEventHandler($formEventCode)
+			End case 
+			
+		: ($formEventCode=On After Edit)
+			
+			This._update()
+			
+		: ($formEventCode=On Drag Over)
+			
+			var $path : Text
+			$path:=Get file from pasteboard(1)
+			
+			If (Test path name($path)#Is a document)
+				return -1
+			End if 
+			
+			If (Not([".4dm"; ".txt"].includes(File($path; fk platform path).extension)))
+				return -1
+			End if 
+			
+			return 0
+			
+		: ($formEventCode=On Drop)
+			
+			$path:=Get file from pasteboard(1)
+			OBJECT SET VALUE(OBJECT Get name; File($path; fk platform path).getText())
+			
+	End case 
 	
 	//MARK: - Form actions
 	
@@ -72,7 +118,7 @@ Function _openFile()
 	var $dataFolder : Text
 	
 	//$dataFolder:=Folder(fk desktop folder).path
-	$dataFolder:=System folder(desktop)
+	$dataFolder:=System folder(Desktop)
 	$name:=Select document($dataFolder; "*.4dm;*.txt"; "Select a 4D method file"; 0)
 	
 	If (OK=1)
@@ -85,7 +131,6 @@ Function _openFile()
 			This.statusText:="File not found"
 		End if 
 	End if 
-	
 	
 Function _saveFile()
 	
@@ -105,7 +150,6 @@ Function _saveFile()
 		$file.setText(This.sourceCode; "utf-8")
 		This.statusText:="File saved: "+$file.name
 	End if 
-	
 	
 Function _checkSyntax()
 	
@@ -140,7 +184,6 @@ Function _checkSyntax()
 		End for 
 		This.resultOutput:=$errorText
 	End if 
-	
 	
 Function _execute()
 	
@@ -188,9 +231,32 @@ Function _execute()
 	This.statusText:="Execution completed"
 	
 	
-Function _clear()
+Function _clear() : cs.FC_CodeRunner
 	
 	This.sourceCode:=""
 	This.resultOutput:=""
 	This.statusText:="Ready"
 	
+	return This
+	
+Function _update() : cs.FC_CodeRunner
+	
+	If (OBJECT Get name(Object with focus)="_CODE_INPUT_")
+		$code:=Get edited text
+	Else 
+		$code:=OBJECT Get value("_CODE_INPUT_")
+	End if 
+	OBJECT SET ENABLED(*; "_BTN_CHECK_"; $code#"")
+	OBJECT SET ENABLED(*; "_BTN_EXECUTE_"; $code#"")
+	
+	return This
+	
+Function _claude()
+	
+	SET TEXT TO PASTEBOARD(File("/RESOURCES/prompt.txt").getText())
+	
+	cs._CodeRunner.new().claude(File("/Users/miyako/.local/bin/claude"))
+	
+Function _show()
+	
+	METHOD OPEN PATH(METHOD Get path(Path class; "FC_CodeRunner"); 200)

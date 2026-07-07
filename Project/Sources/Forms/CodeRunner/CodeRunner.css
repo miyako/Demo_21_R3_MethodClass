@@ -16,6 +16,13 @@
 #_BTN_CLOSE_ {
    fill: #4A4A4A;
 }
+text {
+   stroke: automatic;
+}  
+
+.code {
+   font-family: "Menlo Regular";
+}  
 
 @media (prefers-color-scheme: light) {
    #_BTN_OPEN_FILE_ {
@@ -36,7 +43,9 @@
    #_BTN_CLOSE_ {
       fill: #777777;
    }
-     
+   text {
+      stroke: #696969;
+   }  
 }
 
 

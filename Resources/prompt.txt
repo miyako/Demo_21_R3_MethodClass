@@ -1,0 +1,7 @@
+I want to generate a .xlsx spreadsheet containing statistics from my database.
+Create a .4dm file on desktop that includes the 4D code to produce this file.
+Take advantage of zip and xml features to generate the spreadsheet. 
+
+I want to list my best 50 customers, with annual revenue in columns.
+I want cell colours to highlight the significance of the customers' revenue.
+The code should assign the current date and time to the newly created spreadsheet.
