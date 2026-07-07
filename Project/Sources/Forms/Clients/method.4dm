@@ -28,7 +28,7 @@ Case of
 			Form.clickedEntityPosition:=0
 		End if 
 		
-		OBJECT SET RGB COLORS(*; "@Header@"; 0x00212121; 0x00E0E5EE)
+		//OBJECT SET RGB COLORS(*; "@Header@"; 0x00212121; 0x00E0E5EE)
 		
 		//Page 2
 		Form.editEntity:=Form.clickedEntity

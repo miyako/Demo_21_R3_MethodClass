@@ -1,0 +1,18 @@
+#Variable
+{
+   stroke: automatic;   
+}
+
+@media (prefers-color-scheme: light) {
+   #Variable
+   {
+      stroke: #555555;   
+   }
+}
+
+header {
+   stroke: automatic;  
+}
+button {
+   stroke: automatic;  
+}
