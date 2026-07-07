@@ -411,7 +411,6 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
 							"alternateFill": "automaticAlternate",
 							"textAlign": "left",
 							"fontFamily": "Arial",
@@ -436,7 +435,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"stroke": "automatic"
 						},
 						{
 							"name": "Column2",
@@ -445,7 +445,6 @@
 							"minWidth": 200,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
 							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -469,7 +468,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"stroke": "automatic"
 						},
 						{
 							"name": "Column3",
@@ -479,7 +479,6 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Currency",
-							"stroke": "#212121",
 							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -502,7 +501,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"stroke": "automatic"
 						},
 						{
 							"name": "Column4",
@@ -512,7 +512,6 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Percent",
-							"stroke": "#212121",
 							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -536,7 +535,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"stroke": "automatic"
 						},
 						{
 							"name": "Column5",
@@ -545,7 +545,6 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
 							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -568,7 +567,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"stroke": "automatic"
 						},
 						{
 							"name": "Column7",
@@ -579,7 +579,6 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Long",
-							"stroke": "#212121",
 							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -602,7 +601,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"stroke": "automatic"
 						}
 					]
 				},
@@ -700,8 +700,9 @@
 					"height": 528,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
+					"stroke": "automatic",
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"Round Rectangle12": {
 					"type": "rectangle",
@@ -723,32 +724,9 @@
 					"height": 528,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
-				},
-				"Round Rectangle10_1_": {
-					"type": "rectangle",
-					"top": 612,
-					"left": 125,
-					"width": 188,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle13_1_": {
-					"type": "rectangle",
-					"top": 522,
-					"left": 125,
-					"width": 88,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
+					"stroke": "automatic",
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"_FRST_FIRST_": {
 					"type": "button",
@@ -760,7 +738,6 @@
 						"$ref": "/SOURCES/tips.json#/First"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:First",
 					"icon": "/RESOURCES/Buttons/clients-first.png",
@@ -771,26 +748,15 @@
 						"onClick"
 					]
 				},
-				"_ADDPIC_1": {
-					"type": "rectangle",
-					"top": 314,
-					"left": 86,
-					"width": 177,
-					"height": 28,
-					"fill": "#73A5E7",
-					"stroke": "#73A5E7",
-					"borderRadius": 14
-				},
 				"_ADDPIC_3": {
 					"type": "button",
-					"top": 316,
-					"left": 96,
-					"width": 156,
+					"top": 329,
+					"left": 86,
+					"width": 177,
 					"height": 24,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/Picture"
 					},
-					"stroke": "#FFFFFF",
 					"focusable": false,
 					"text": ":xliff:Add a Picture",
 					"icon": "/RESOURCES/Images/Illu_smallimg.png",
@@ -810,7 +776,8 @@
 					"height": 16,
 					"class": "Texts13N",
 					"fontWeight": "bold",
-					"text": ":xliff:Logo"
+					"text": ":xliff:Logo",
+					"stroke": "automatic"
 				},
 				"Text2": {
 					"type": "text",
@@ -820,7 +787,8 @@
 					"height": 16,
 					"class": "Texts13N",
 					"fontWeight": "bold",
-					"text": ":xliff:General Information"
+					"text": ":xliff:General Information",
+					"stroke": "automatic"
 				},
 				"Text3": {
 					"type": "text",
@@ -831,55 +799,8 @@
 					"sizingX": "grow",
 					"class": "Texts13N",
 					"fontWeight": "bold",
-					"text": ":xliff:Optional Data"
-				},
-				"Round Rectangle4": {
-					"type": "rectangle",
-					"top": 396,
-					"left": 125,
-					"width": 188,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle5_1_": {
-					"type": "rectangle",
-					"top": 552,
-					"left": 125,
-					"width": 188,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle6_1_": {
-					"type": "rectangle",
-					"top": 582,
-					"left": 125,
-					"width": 188,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle7_1_": {
-					"type": "rectangle",
-					"top": 426,
-					"left": 125,
-					"width": 188,
-					"height": 92,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
+					"text": ":xliff:Optional Data",
+					"stroke": "automatic"
 				},
 				"Round Rectangle8": {
 					"type": "rectangle",
@@ -903,7 +824,7 @@
 					"dataSource": "Form:C1466.editEntity.Name",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -920,7 +841,7 @@
 					"dataSource": "Form:C1466.editEntity.Address",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -938,7 +859,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -956,7 +877,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -974,7 +895,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -992,7 +913,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -1010,7 +931,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -1027,7 +948,7 @@
 					"dataSource": "Form:C1466.editEntity.Comments",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -1046,7 +967,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"numberFormat": {
 						"$ref": "/SOURCES/filters.json#/Currency"
@@ -1068,7 +989,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"numberFormat": {
 						"$ref": "/SOURCES/filters.json#/Percent"
@@ -1084,7 +1005,7 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Name"
@@ -1095,7 +1016,7 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Address"
@@ -1106,7 +1027,7 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:City"
@@ -1117,7 +1038,7 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:State"
@@ -1150,16 +1071,6 @@
 					"height": 35,
 					"stroke": "#D8D8D8"
 				},
-				"_NOPIC_5": {
-					"type": "rectangle",
-					"top": 164,
-					"left": 36,
-					"width": 277,
-					"height": 151,
-					"fill": "#EEF1F8",
-					"stroke": "#D8DCE3",
-					"borderRadius": 12
-				},
 				"_NOPIC_": {
 					"type": "picture",
 					"top": 188,
@@ -1175,7 +1086,7 @@
 					"left": 60,
 					"width": 229,
 					"height": 16,
-					"stroke": "#3D85E1",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "center",
 					"fontWeight": "bold",
@@ -1191,7 +1102,6 @@
 						"$ref": "/SOURCES/tips.json#/Previous"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Previous",
 					"icon": "/RESOURCES/Buttons/clients-previous.png",
@@ -1212,7 +1122,6 @@
 						"$ref": "/SOURCES/tips.json#/Next"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Next",
 					"icon": "/RESOURCES/Buttons/clients-next.png",
@@ -1233,7 +1142,6 @@
 						"$ref": "/SOURCES/tips.json#/Last"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Last",
 					"icon": "/RESOURCES/Buttons/clients-last.png",
@@ -1254,7 +1162,6 @@
 						"$ref": "/SOURCES/tips.json#/Delete"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Delete",
 					"icon": "/RESOURCES/Buttons/clients-delete.png",
@@ -1275,7 +1182,6 @@
 						"$ref": "/SOURCES/tips.json#/Cancel"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Cancel",
 					"icon": "/RESOURCES/Buttons/clients-cancel.png",
@@ -1296,7 +1202,6 @@
 						"$ref": "/SOURCES/tips.json#/Validate"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Validate",
 					"icon": "/RESOURCES/Buttons/clients-confirm.png",
@@ -1317,7 +1222,7 @@
 					"dataSource": "Form:C1466.editEntity.Logo",
 					"dataSourceTypeHint": "picture",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"pictureFormat": "proportionalCenter",
 					"dragging": "none",
 					"dropping": "none",
@@ -1339,7 +1244,6 @@
 						"$ref": "/SOURCES/tips.json#/Unlock"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Unlock",
 					"icon": "/RESOURCES/Buttons/button-RO-RW.png",
@@ -1357,9 +1261,9 @@
 					"width": 88,
 					"height": 26,
 					"sizingX": "move",
-					"fill": "#BBBBBB",
-					"stroke": "#999999",
-					"strokeWidth": 2,
+					"fill": "automatic",
+					"stroke": "automatic",
+					"strokeWidth": 1,
 					"borderRadius": 5
 				},
 				"_ID_": {
@@ -1377,7 +1281,7 @@
 					"fontWeight": "bold",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1391,7 +1295,7 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Country"
@@ -1405,7 +1309,8 @@
 					"sizingX": "grow",
 					"class": "Texts13N",
 					"fontWeight": "bold",
-					"text": ":xliff:Numbers"
+					"text": ":xliff:Numbers",
+					"stroke": "automatic"
 				},
 				"Round Rectangle11": {
 					"type": "rectangle",
@@ -1469,8 +1374,7 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -1480,12 +1384,12 @@
 							"header": {
 								"name": "Header9",
 								"text": ":xliff:Kind",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer9",
@@ -1493,16 +1397,16 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"alternateFill": "automaticAlternate"
 						},
 						{
 							"name": "_FIELD_Value_1",
 							"dataSource": "This:C1470.Value",
-							"width": 210,
+							"width": 150,
 							"minWidth": 20,
 							"maxWidth": 32000,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
 							"textAlign": "left",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -1513,12 +1417,12 @@
 							"header": {
 								"name": "Header10",
 								"text": ":xliff:Value",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer10",
@@ -1526,7 +1430,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"alternateFill": "automaticAlternate"
 						}
 					]
 				},
@@ -1573,8 +1478,8 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -1584,7 +1489,7 @@
 							"header": {
 								"name": "Header11",
 								"text": ":xliff:Type",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
@@ -1602,11 +1507,11 @@
 						{
 							"name": "_FIELD_Value_2",
 							"dataSource": "This:C1470.Value",
-							"width": 384,
+							"width": 250,
 							"minWidth": 50,
 							"maxWidth": 32000,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "left",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -1617,7 +1522,7 @@
 							"header": {
 								"name": "Header12",
 								"text": ":xliff:Value",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
@@ -1643,7 +1548,8 @@
 					"sizingX": "grow",
 					"class": "Texts13N",
 					"fontWeight": "bold",
-					"text": ":xliff:eAddress"
+					"text": ":xliff:eAddress",
+					"stroke": "automatic"
 				},
 				"Line8": {
 					"type": "line",
@@ -1695,8 +1601,6 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -1706,12 +1610,12 @@
 							"header": {
 								"name": "Header6",
 								"text": ":xliff:Property",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer6",
@@ -1719,7 +1623,9 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"alternateFill": "automaticAlternate",
+							"stroke": "automatic"
 						},
 						{
 							"name": "_FIELD_Value_",
@@ -1727,8 +1633,6 @@
 							"width": 384,
 							"minWidth": 100,
 							"maxWidth": 32000,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
 							"textAlign": "left",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -1739,12 +1643,12 @@
 							"header": {
 								"name": "Header7",
 								"text": ":xliff:Value",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer7",
@@ -1752,7 +1656,9 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"alternateFill": "automaticAlternate",
+							"stroke": "automatic"
 						}
 					]
 				},
@@ -1961,7 +1867,7 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:ZIPCode"
@@ -1978,61 +1884,13 @@
 						"onClick"
 					]
 				},
-				"Round Rectangle10_2_": {
-					"type": "rectangle",
-					"top": 612,
-					"left": 125,
-					"width": 88,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle13_2_": {
-					"type": "rectangle",
-					"top": 426,
-					"left": 125,
-					"width": 188,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle6_2_": {
-					"type": "rectangle",
-					"top": 582,
-					"left": 125,
-					"width": 188,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle7_2_": {
-					"type": "rectangle",
-					"top": 456,
-					"left": 125,
-					"width": 188,
-					"height": 122,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
 				"Text5_2_": {
 					"type": "text",
 					"top": 462,
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Comments"
@@ -2043,7 +1901,7 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Total_Sales"
@@ -2054,7 +1912,7 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Discount Rate"
@@ -2065,7 +1923,7 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Contact"
@@ -2074,13 +1932,6 @@
 		}
 	],
 	"editor": {
-		"groups": {
-			"Group11": [
-				"_NOPIC_5",
-				"_NOPIC_",
-				"_NOPIC_1"
-			]
-		},
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
@@ -2088,11 +1939,6 @@
 			"View 2": {
 				"objects": [
 					"Round Rectangle2",
-					"Round Rectangle10_1_",
-					"Round Rectangle13_1_",
-					"Round Rectangle5_1_",
-					"Round Rectangle6_1_",
-					"Round Rectangle7_1_",
 					"_FIELD_Address_1_",
 					"_FIELD_ZIP_1_",
 					"_FIELD_City__1_",
@@ -2111,10 +1957,6 @@
 					"_FIELD_Address_2_",
 					"_FIELD_State__2_",
 					"_FIELD_Country_2_",
-					"Round Rectangle10_2_",
-					"Round Rectangle13_2_",
-					"Round Rectangle6_2_",
-					"Round Rectangle7_2_",
 					"Text5_2_",
 					"Text7_2_",
 					"Text8_2_",
@@ -2129,7 +1971,7 @@
 			"View 9": {}
 		}
 	},
-	"geometryStamp": 3,
+	"geometryStamp": 43,
 	"$4d": {
 		"version": "1",
 		"kind": "form"

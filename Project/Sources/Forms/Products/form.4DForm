@@ -1207,7 +1207,6 @@
 						"$ref": "/SOURCES/tips.json#/Unlock"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Unlock",
 					"icon": "/RESOURCES/Buttons/button-RO-RW.png",
