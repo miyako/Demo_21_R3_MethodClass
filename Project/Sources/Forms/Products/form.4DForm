@@ -362,7 +362,7 @@
 					"method": "ObjectMethods/Variable.4dm",
 					"events": [
 						"onDataChange",
-						"onAfterKeystroke"
+						"onAfterEdit"
 					]
 				},
 				"_LB_1": {
@@ -635,7 +635,6 @@
 						"$ref": "/SOURCES/tips.json#/First"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:First",
 					"icon": "/RESOURCES/Buttons/products-first.png",
@@ -654,29 +653,19 @@
 					"height": 528,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
-				},
-				"_ADDPIC_4": {
-					"type": "rectangle",
-					"top": 354,
-					"left": 86,
-					"width": 177,
-					"height": 28,
-					"fill": "#99A4E3",
-					"stroke": "#99A4E3",
-					"borderRadius": 14
+					"stroke": "automatic",
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"_ADDPIC_3": {
 					"type": "button",
-					"top": 355,
-					"left": 96,
-					"width": 156,
+					"top": 369,
+					"left": 86,
+					"width": 177,
 					"height": 24,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/Picture"
 					},
-					"stroke": "#FFFFFF",
 					"focusable": false,
 					"text": ":xliff:Add a Picture",
 					"icon": "/RESOURCES/Images/Illu_smallimg.png",
@@ -686,7 +675,9 @@
 					"method": "ObjectMethods/_ADDPIC_3.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"textAlign": "center",
+					"borderStyle": "none"
 				},
 				"Round Rectangle3": {
 					"type": "rectangle",
@@ -696,8 +687,9 @@
 					"height": 528,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
+					"stroke": "automatic",
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"Text": {
 					"type": "text",
@@ -729,52 +721,6 @@
 					"fontWeight": "bold",
 					"text": ":xliff:Optional Data"
 				},
-				"Round Rectangle4": {
-					"type": "rectangle",
-					"top": 438,
-					"left": 125,
-					"width": 188,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle5": {
-					"type": "rectangle",
-					"top": 564,
-					"left": 125,
-					"width": 188,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle6": {
-					"type": "rectangle",
-					"top": 594,
-					"left": 125,
-					"width": 188,
-					"height": 26,
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle7": {
-					"type": "rectangle",
-					"top": 468,
-					"left": 125,
-					"width": 188,
-					"height": 92,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
 				"Round Rectangle8": {
 					"type": "rectangle",
 					"top": 164,
@@ -797,7 +743,7 @@
 					"dataSource": "Form:C1466.editEntity.Reference",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -814,7 +760,7 @@
 					"dataSource": "Form:C1466.editEntity.Name",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -832,7 +778,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"numberFormat": {
 						"$ref": "/SOURCES/filters.json#/Currency"
@@ -853,7 +799,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"numberFormat": {
 						"$ref": "/SOURCES/filters.json#/Percent"
@@ -869,7 +815,6 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Reference"
@@ -880,7 +825,6 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Name"
@@ -891,7 +835,6 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Sale Price"
@@ -902,7 +845,6 @@
 					"left": 23,
 					"width": 94,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Tax Rate"
@@ -991,16 +933,6 @@
 					"height": 35,
 					"stroke": "#D8D8D8"
 				},
-				"_NOPIC_5": {
-					"type": "rectangle",
-					"top": 164,
-					"left": 36,
-					"width": 277,
-					"height": 191,
-					"fill": "#EEF1F8",
-					"stroke": "#D8DCE3",
-					"borderRadius": 12
-				},
 				"_NOPIC_": {
 					"type": "picture",
 					"top": 188,
@@ -1016,7 +948,6 @@
 					"left": 60,
 					"width": 229,
 					"height": 16,
-					"stroke": "#5463C3",
 					"class": "Texts13N",
 					"textAlign": "center",
 					"fontWeight": "bold",
@@ -1032,7 +963,6 @@
 						"$ref": "/SOURCES/tips.json#/Previous"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Previous",
 					"icon": "/RESOURCES/Buttons/products-previous.png",
@@ -1053,7 +983,6 @@
 						"$ref": "/SOURCES/tips.json#/Next"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Next",
 					"icon": "/RESOURCES/Buttons/products-next.png",
@@ -1074,7 +1003,6 @@
 						"$ref": "/SOURCES/tips.json#/Last"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Last",
 					"icon": "/RESOURCES/Buttons/products-last.png",
@@ -1095,7 +1023,6 @@
 						"$ref": "/SOURCES/tips.json#/Delete"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Delete",
 					"icon": "/RESOURCES/Buttons/products-delete.png",
@@ -1116,7 +1043,6 @@
 						"$ref": "/SOURCES/tips.json#/Cancel"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Cancel",
 					"icon": "/RESOURCES/Buttons/products-cancel.png",
@@ -1137,7 +1063,6 @@
 						"$ref": "/SOURCES/tips.json#/Validate"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Validate",
 					"icon": "/RESOURCES/Buttons/products-confirm.png",
@@ -1191,8 +1116,7 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -1202,7 +1126,6 @@
 							"header": {
 								"name": "Header6",
 								"text": ":xliff:Property",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
@@ -1215,7 +1138,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"stroke": "automatic"
 						},
 						{
 							"name": "_FIELD_Value_",
@@ -1223,8 +1147,7 @@
 							"width": 384,
 							"minWidth": 100,
 							"maxWidth": 32000,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "left",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -1235,7 +1158,6 @@
 							"header": {
 								"name": "Header7",
 								"text": ":xliff:Value",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
@@ -1248,7 +1170,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"stroke": "automatic"
 						}
 					]
 				},
@@ -1262,7 +1185,7 @@
 					"dataSource": "Form:C1466.editEntity.Picture",
 					"dataSourceTypeHint": "picture",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"pictureFormat": "proportionalCenter",
 					"dragging": "none",
 					"dropping": "none",
@@ -1310,17 +1233,6 @@
 		}
 	],
 	"editor": {
-		"groups": {
-			"Group6": [
-				"_NOPIC_5",
-				"_NOPIC_",
-				"_NOPIC_1"
-			],
-			"Group9": [
-				"_ADDPIC_4",
-				"_ADDPIC_3"
-			]
-		},
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
@@ -1344,5 +1256,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 3
+	"geometryStamp": 38
 }

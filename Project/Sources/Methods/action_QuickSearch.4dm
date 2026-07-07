@@ -2,7 +2,7 @@
 var $propertyName : Text
 var $selection; $property : Object
 
-If (Form event code=On After Keystroke)
+If (Form event code=On After Edit)
 	$text:=Get edited text
 Else 
 	$text:=Form.queryString

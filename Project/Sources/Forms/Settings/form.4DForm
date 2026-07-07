@@ -620,16 +620,6 @@
 						"onDataChange"
 					]
 				},
-				"Rectangle1": {
-					"type": "rectangle",
-					"top": 277,
-					"left": 69,
-					"width": 177,
-					"height": 26,
-					"borderRadius": 4,
-					"fill": "automatic",
-					"stroke": "automatic"
-				},
 				"_ADDPIC_3": {
 					"type": "button",
 					"top": 277,
@@ -711,5 +701,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 84
+	"geometryStamp": 90
 }

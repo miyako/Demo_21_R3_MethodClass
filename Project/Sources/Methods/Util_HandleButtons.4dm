@@ -15,11 +15,14 @@ OBJECT SET ENABLED(*; "@_UNLOCK_@"; Not($entity.isNew()))
 If (Form.recordCanBeSaved)
 	If ($entity.isNew())
 		OBJECT SET TITLE(*; "@_UNLOCK_@"; ":xliff:New")
+		OBJECT SET TITLE(*; "@_UNLOCK_@"; Localized string("New"))
 	Else 
-		OBJECT SET TITLE(*; "@_UNLOCK_@"; ":xliff:Lock")
+		//OBJECT SET TITLE(*; "@_UNLOCK_@"; ":xliff:Lock")
+		OBJECT SET TITLE(*; "@_UNLOCK_@"; Localized string("Lock"))
 	End if 
 Else 
-	OBJECT SET TITLE(*; "@_UNLOCK_@"; ":xliff:Unlock")
+	//OBJECT SET TITLE(*; "@_UNLOCK_@"; ":xliff:Unlock")
+	OBJECT SET TITLE(*; "@_UNLOCK_@"; Localized string("Unlock"))
 End if 
 OBJECT SET DRAG AND DROP OPTIONS(*; "@_Picture_@"; True; True; Form.recordCanBeSaved; Form.recordCanBeSaved)  //draggable ; automaticDrag ; droppable ; automaticDrop )
 For each ($object; Form.objectsNames)

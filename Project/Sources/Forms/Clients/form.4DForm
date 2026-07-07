@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"rightMargin": 0,
 	"bottomMargin": 10,
@@ -41,7 +41,8 @@
 					"width": 997,
 					"height": 65,
 					"sizingX": "grow",
-					"stroke": "#FFFFFF"
+					"stroke": "transparent",
+					"fill": "automatic"
 				},
 				"Rectangle": {
 					"type": "rectangle",
@@ -119,7 +120,8 @@
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"stroke": "#FFFFFF",
-					"borderRadius": 5
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"_ALW_ADD_": {
 					"type": "button",
@@ -131,7 +133,6 @@
 						"$ref": "/SOURCES/tips.json#/Add"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Add",
 					"icon": "/RESOURCES/Buttons/clients-add.png",
@@ -174,7 +175,6 @@
 						"$ref": "/SOURCES/tips.json#/Delete"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Delete",
 					"icon": "/RESOURCES/Buttons/clients-delete.png",
@@ -195,7 +195,6 @@
 						"$ref": "/SOURCES/tips.json#/Delete"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:All",
 					"icon": "/RESOURCES/Buttons/clients-all.png",
@@ -216,7 +215,6 @@
 						"$ref": "/SOURCES/tips.json#/Subset"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Subset",
 					"icon": "/RESOURCES/Buttons/clients-extract.png",
@@ -237,7 +235,6 @@
 						"$ref": "/SOURCES/tips.json#/Query"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Query",
 					"icon": "/RESOURCES/Buttons/clients-search.png",
@@ -259,7 +256,6 @@
 						"$ref": "/SOURCES/tips.json#/Reports"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Reports",
 					"icon": "/RESOURCES/Buttons/clients-report.png",
@@ -281,7 +277,6 @@
 						"$ref": "/SOURCES/tips.json#/Labels"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Labels",
 					"icon": "/RESOURCES/Buttons/clients-labels.png",
@@ -303,7 +298,6 @@
 						"$ref": "/SOURCES/tips.json#/Print"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Print",
 					"icon": "/RESOURCES/Buttons/clients-print.png",
@@ -325,7 +319,6 @@
 						"$ref": "/SOURCES/tips.json#/Export"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Export",
 					"icon": "/RESOURCES/Buttons/clients-export.png",
@@ -343,8 +336,8 @@
 					"width": 266,
 					"height": 25,
 					"sizingX": "grow",
-					"fill": "#F3F5FA",
-					"stroke": "#D8DCE3",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"borderRadius": 5
 				},
 				"Variable": {
@@ -355,7 +348,7 @@
 					"height": 16,
 					"sizingX": "grow",
 					"dataSource": "Form:C1466.queryString",
-					"stroke": "#666666",
+					"stroke": "automatic",
 					"class": "Texts13N",
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -367,15 +360,15 @@
 					"method": "ObjectMethods/Variable.4dm",
 					"events": [
 						"onDataChange",
-						"onAfterKeystroke"
+						"onAfterEdit"
 					]
 				},
 				"_LB_1": {
 					"type": "listbox",
 					"top": 171,
 					"left": 19,
-					"width": 958,
-					"height": 482,
+					"width": 957,
+					"height": 480,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"resizingMode": "legacy",
@@ -393,7 +386,7 @@
 					"horizontalLineStroke": "transparent",
 					"verticalLineStroke": "transparent",
 					"stroke": "#212121",
-					"alternateFill": "#F3F5FA",
+					"alternateFill": "automaticAlternate",
 					"fontFamily": "Arial",
 					"fontSize": 13,
 					"borderStyle": "none",
@@ -408,6 +401,7 @@
 						"onHeaderClick",
 						"onBeginDragOver"
 					],
+					"right": 976,
 					"columns": [
 						{
 							"name": "Column1",
@@ -418,7 +412,7 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "left",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -429,12 +423,12 @@
 							"header": {
 								"name": "Header1",
 								"text": ":xliff:Number",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer1",
@@ -452,7 +446,7 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -462,12 +456,12 @@
 							"header": {
 								"name": "Header2",
 								"text": ":xliff:Name",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer2",
@@ -486,7 +480,7 @@
 							"enterable": false,
 							"numberFormat": "|Currency",
 							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -496,11 +490,11 @@
 							"header": {
 								"name": "Header3",
 								"text": ":xliff:City",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer3",
@@ -519,7 +513,7 @@
 							"enterable": false,
 							"numberFormat": "|Percent",
 							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -529,12 +523,12 @@
 							"header": {
 								"name": "Header4",
 								"text": ":xliff:State",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer4",
@@ -552,7 +546,7 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -562,11 +556,11 @@
 							"header": {
 								"name": "Header5",
 								"text": ":xliff:Contact",
-								"stroke": "#212121",
 								"textAlign": "left",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer5",
@@ -580,13 +574,13 @@
 							"name": "Column7",
 							"dataSource": "This:C1470.Invoice_List.length",
 							"dataSourceTypeHint": "number",
-							"width": 73,
+							"width": 70,
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Long",
 							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -596,11 +590,11 @@
 							"header": {
 								"name": "Header8",
 								"text": ":xliff:NbInvoices",
-								"stroke": "#212121",
 								"textAlign": "right",
 								"fontFamily": "Arial",
 								"fontSize": 13,
-								"fontWeight": "bold"
+								"fontWeight": "bold",
+								"stroke": "automatic"
 							},
 							"footer": {
 								"name": "Footer8",
@@ -618,7 +612,7 @@
 					"left": 40,
 					"width": 221,
 					"height": 17,
-					"dataSource": "Util_GiveRecordCount (Form:C1466.displayedSelection;Form:C1466.selectedSubset)",
+					"dataSource": "Util_GiveRecordCount(Form:C1466.displayedSelection; Form:C1466.selectedSubset)",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -638,7 +632,6 @@
 						"$ref": "/SOURCES/tips.json#/Order By Extend"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Sort",
 					"icon": "/RESOURCES/Buttons/Products-OrderByAlt.png",
@@ -685,7 +678,6 @@
 						"$ref": "/SOURCES/tips.json#/Open"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Open Record",
 					"icon": "/RESOURCES/Buttons/clients-readWrite.png",
@@ -2136,5 +2128,10 @@
 			"View 8": {},
 			"View 9": {}
 		}
+	},
+	"geometryStamp": 3,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }
