@@ -106,7 +106,7 @@ Function inputCodeEventHandler($formEventCode : Integer) : Integer
 			
 			$path:=Get file from pasteboard(1)
 			OBJECT SET VALUE(OBJECT Get name; File($path; fk platform path).getText())
-			
+			This._update()
 	End case 
 	
 	//MARK: - Form actions
@@ -241,7 +241,7 @@ Function _clear() : cs.FC_CodeRunner
 	
 Function _update() : cs.FC_CodeRunner
 	
-	If (OBJECT Get name(Object with focus)="_CODE_INPUT_")
+	If (OBJECT Get name(Object with focus)="_CODE_INPUT_") && (FORM Event.code=On After Edit)
 		$code:=Get edited text
 	Else 
 		$code:=OBJECT Get value("_CODE_INPUT_")
