@@ -3,16 +3,19 @@
 	"windowSizingX": "variable",
 	"windowSizingY": "variable",
 	"windowMinWidth": 700,
-	"windowMinHeight": 560,
+	"windowMinHeight": 520,
 	"windowTitle": "Code Runner - 4D.Method",
-	"rightMargin": 0,
-	"bottomMargin": 6,
+	"rightMargin": 15,
+	"bottomMargin": 15,
 	"markerHeader": 15,
 	"markerBody": 520,
 	"markerBreak": 540,
 	"markerFooter": 560,
 	"formClass": "FC_CodeRunner",
 	"method": "method.4dm",
+	"css": [
+		"CodeRunner.css"
+	],
 	"events": [
 		"onLoad",
 		"onUnload"
@@ -40,9 +43,9 @@
 					"height": 266,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"fill": "#FAFAFA",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
+					"fill": "automatic",
+					"stroke": "automatic",
+					"strokeWidth": 1,
 					"borderRadius": 5
 				},
 				"_CODE_INPUT_": {
@@ -79,8 +82,6 @@
 					"tooltip": "Open a code file",
 					"class": "Texts12N",
 					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fill": "#607D8B",
 					"focusable": false,
 					"text": "Open...",
 					"style": "flat",
@@ -99,8 +100,6 @@
 					"tooltip": "Save code to file",
 					"class": "Texts12N",
 					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fill": "#607D8B",
 					"focusable": false,
 					"text": "Save...",
 					"style": "flat",
@@ -119,8 +118,6 @@
 					"tooltip": "Check syntax of the code",
 					"class": "Texts12N",
 					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fill": "#4CAF50",
 					"focusable": false,
 					"text": "Check Syntax",
 					"style": "flat",
@@ -139,8 +136,6 @@
 					"tooltip": "Execute the code",
 					"class": "Texts12N",
 					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fill": "#1E90FF",
 					"focusable": false,
 					"text": "Execute",
 					"style": "flat",
@@ -159,8 +154,6 @@
 					"tooltip": "Clear all fields",
 					"class": "Texts12N",
 					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fill": "#FF9800",
 					"focusable": false,
 					"text": "Clear",
 					"style": "flat",
@@ -180,8 +173,6 @@
 					"action": "cancel",
 					"class": "Texts12N",
 					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fill": "#777777",
 					"focusable": false,
 					"text": "Close",
 					"style": "flat",
@@ -196,9 +187,9 @@
 					"width": 240,
 					"height": 82,
 					"sizingX": "move",
-					"fill": "#F5F5F5",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
+					"fill": "automatic",
+					"stroke": "automatic",
+					"strokeWidth": 1,
 					"borderRadius": 5
 				},
 				"Label_Status": {
@@ -228,7 +219,8 @@
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"focusable": false
 				},
 				"Label_Result": {
 					"type": "text",
@@ -250,9 +242,9 @@
 					"height": 170,
 					"sizingX": "grow",
 					"sizingY": "move",
-					"fill": "#F8F8F0",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
+					"fill": "automatic",
+					"stroke": "automatic",
+					"strokeWidth": 1,
 					"borderRadius": 5
 				},
 				"_RESULT_OUTPUT_": {
@@ -277,5 +269,17 @@
 				}
 			}
 		}
-	]
+	],
+	"geometryStamp": 9,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }

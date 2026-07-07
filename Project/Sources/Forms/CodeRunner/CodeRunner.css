@@ -1,0 +1,42 @@
+#_BTN_OPEN_FILE_ {
+   fill: #37474F;   
+}
+#_BTN_SAVE_FILE_ {
+   fill: #37474F;   
+}   
+#_BTN_CHECK_ {
+   fill: #0F3D13;
+}
+#_BTN_EXECUTE_ {
+   fill: #0A3A6B;
+}
+#_BTN_CLEAR_ {
+   fill: #5C2000;
+}
+#_BTN_CLOSE_ {
+   fill: #4A4A4A;
+}
+
+@media (prefers-color-scheme: light) {
+   #_BTN_OPEN_FILE_ {
+      fill: #607D8B;   
+   }
+   #_BTN_SAVE_FILE_ {
+      fill: #607D8B;   
+   }   
+   #_BTN_CHECK_ {
+      fill: #4CAF50;
+   }
+   #_BTN_EXECUTE_ {
+      fill: #1E90FF;
+   }
+   #_BTN_CLEAR_ {
+      fill: #FF9800;
+   }
+   #_BTN_CLOSE_ {
+      fill: #777777;
+   }
+     
+}
+
+
