@@ -9,6 +9,9 @@
 	"markerBody": 200,
 	"markerBreak": 220,
 	"markerFooter": 240,
+	"css": [
+		"StartupScreen.css"
+	],
 	"events": [
 		"onLoad",
 		"onValidate",
@@ -42,7 +45,8 @@
 					"left": 0,
 					"width": 651,
 					"height": 392,
-					"stroke": "#FFFFFF"
+					"stroke": "transparent",
+					"fill": "automatic"
 				}
 			}
 		},
@@ -207,7 +211,6 @@
 					"width": 595,
 					"height": 32,
 					"sizingX": "grow",
-					"stroke": "#555555",
 					"textAlign": "center",
 					"fontFamily": "Arial",
 					"fontSize": 28,
@@ -228,7 +231,6 @@
 					"tooltip": "Code Runner",
 					"class": "Texts11N",
 					"textAlign": "center",
-					"stroke": "#555555",
 					"focusable": false,
 					"text": "</>",
 					"style": "flat",
@@ -244,5 +246,12 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
 	}
 }

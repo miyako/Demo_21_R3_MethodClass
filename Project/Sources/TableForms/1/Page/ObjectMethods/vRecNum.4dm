@@ -1,1 +1,0 @@
-Self->:=Choose(Selected record number(Current form table->)<0; ""; String(Selected record number(Current form table->))+" / "+String(Records in selection(Current form table->)))

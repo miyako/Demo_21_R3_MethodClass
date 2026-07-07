@@ -64,7 +64,6 @@
 			"Settings_ApplyToListBox",
 			"Settings_GetCurrent",
 			"Settings_Preset",
-			"StartUp",
 			"Util_Collection2Object",
 			"Util_ConvertText2Type",
 			"Util_ConvertTypeToText",

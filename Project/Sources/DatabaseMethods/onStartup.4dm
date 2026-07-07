@@ -1,3 +1,2 @@
-//StartUp
 M_StartupScreen()
 

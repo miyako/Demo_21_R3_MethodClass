@@ -1,0 +1,11 @@
+#_TITLE_,
+#_BTN_CODE_RUNNER_ {
+   stroke: #FFFFFF;   
+}
+
+@media (prefers-color-scheme: light) {
+   #_TITLE_,
+   #_BTN_CODE_RUNNER_ {
+      stroke: #555555;   
+   }
+}
