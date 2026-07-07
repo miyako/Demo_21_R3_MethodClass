@@ -1,15 +1,23 @@
 I want to generate a .xlsx spreadsheet containing statistics from my database.
 I want to list my best 50 customers, with annual revenue in columns.
-I want cell colours to highlight the significance of the customers’ revenue.
+I want cell colours to highlight the significance of the customers' revenue.
+The code should assign the current date and time to the newly created spreadsheet.
 
 Create a .4dm file on desktop that contains the 4D code to produce this file.
 Take advantage of zip and xml features to generate the spreadsheet.
-Pay special attention to how paths are processed by 4D zip command.
+Pay special attention to how paths are processed by the 4D zip command:
 
 // BAD: full path passed as destination
-$zip.files.push(New object(“source”; $build.file(“xl/workbook.xml”); “destination”; “xl/workbook.xml”))
+$zip.files.push({source: $build.file("xl/workbook.xml"); destination: "xl/workbook.xml"})
 // produced entry: xl/workbook.xmlworkbook.xml
 
 // GOOD: destination is the containing FOLDER only
-$zip.files.push(New object(“source”; $build.file(“xl/workbook.xml”); “destination”; “xl/”))
+$zip.files.push({source: $build.file("xl/workbook.xml"); destination: "xl/"})
 // produced entry: xl/workbook.xml
+
+Follow these 4D coding conventions:
+- Write text files without a BOM: File.setText(...; "utf-8-no-bom"), not "utf-8".
+- Use strictly character-based (faster) replacement: Replace string(...; *), not the default collation-based form.
+- Use the compound assignment operator: $s+="..." instead of $s:=$s+"...".
+- Use literal syntax for objects and collections: {key: value} and [a; b; c], not New object / New collection.
+- Prefer 4D's native XML DOM commands (DOM Create XML Ref, DOM Append XML element, ...) over building XML by string concatenation where practical.
