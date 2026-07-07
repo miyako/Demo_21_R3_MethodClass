@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="14">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="15">
 	<com.4d>
 		<deployment>
 			<options/>
@@ -7,7 +7,7 @@
 			<developper display_toolbar="true"/>
 			<user splash_screen="false"/>
 		</interface>
-		<general startup_environnement="1"/>
+		<general allow_user_settings="true" startup_environnement="1"/>
 		<compiler>
 			<typage default_for_button="2"/>
 		</compiler>
