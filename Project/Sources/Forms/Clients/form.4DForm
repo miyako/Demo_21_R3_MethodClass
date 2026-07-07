@@ -436,7 +436,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column2",
@@ -469,7 +470,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column3",
@@ -502,7 +504,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column4",
@@ -536,7 +539,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column5",
@@ -568,7 +572,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column7",
@@ -602,7 +607,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						}
 					]
 				},
@@ -1398,7 +1404,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"alternateFill": "automaticAlternate"
+							"alternateFill": "automaticAlternate",
+							"truncateMode": "none"
 						},
 						{
 							"name": "_FIELD_Value_1",
@@ -1431,7 +1438,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"alternateFill": "automaticAlternate"
+							"alternateFill": "automaticAlternate",
+							"truncateMode": "none"
 						}
 					]
 				},
@@ -1502,7 +1510,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "_FIELD_Value_2",
@@ -1535,7 +1544,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						}
 					]
 				},
@@ -1625,7 +1635,8 @@
 								"fontSize": 13
 							},
 							"alternateFill": "automaticAlternate",
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "_FIELD_Value_",
@@ -1658,7 +1669,8 @@
 								"fontSize": 13
 							},
 							"alternateFill": "automaticAlternate",
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						}
 					]
 				},

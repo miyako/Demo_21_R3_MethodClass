@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"rightMargin": 0,
 	"bottomMargin": 10,
@@ -41,7 +41,8 @@
 					"width": 997,
 					"height": 65,
 					"sizingX": "grow",
-					"stroke": "#FFFFFF"
+					"stroke": "transparent",
+					"fill": "automatic"
 				},
 				"Rectangle": {
 					"type": "rectangle",
@@ -119,7 +120,8 @@
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"stroke": "#FFFFFF",
-					"borderRadius": 5
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"_ALW_ADD_": {
 					"type": "button",
@@ -131,7 +133,6 @@
 						"$ref": "/SOURCES/tips.json#/Add"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Add",
 					"icon": "/RESOURCES/Buttons/invoices-add.png",
@@ -174,7 +175,6 @@
 						"$ref": "/SOURCES/tips.json#/Delete"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Delete",
 					"icon": "/RESOURCES/Buttons/invoices-delete.png",
@@ -195,7 +195,6 @@
 						"$ref": "/SOURCES/tips.json#/Delete"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:All",
 					"icon": "/RESOURCES/Buttons/invoices-all.png",
@@ -216,7 +215,6 @@
 						"$ref": "/SOURCES/tips.json#/Subset"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Subset",
 					"icon": "/RESOURCES/Buttons/invoices-extract.png",
@@ -237,7 +235,6 @@
 						"$ref": "/SOURCES/tips.json#/Query"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Query",
 					"icon": "/RESOURCES/Buttons/invoices-search.png",
@@ -259,7 +256,6 @@
 						"$ref": "/SOURCES/tips.json#/Reports"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Reports",
 					"icon": "/RESOURCES/Buttons/invoices-report.png",
@@ -281,7 +277,6 @@
 						"$ref": "/SOURCES/tips.json#/Labels"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Labels",
 					"icon": "/RESOURCES/Buttons/invoices-labels.png",
@@ -303,7 +298,6 @@
 						"$ref": "/SOURCES/tips.json#/Print"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Print",
 					"icon": "/RESOURCES/Buttons/invoices-print.png",
@@ -325,7 +319,6 @@
 						"$ref": "/SOURCES/tips.json#/Export"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Export",
 					"icon": "/RESOURCES/Buttons/invoices-export.png",
@@ -343,8 +336,8 @@
 					"width": 266,
 					"height": 25,
 					"sizingX": "grow",
-					"fill": "#F3F5FA",
-					"stroke": "#D8DCE3",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"borderRadius": 5
 				},
 				"Variable": {
@@ -355,7 +348,6 @@
 					"height": 16,
 					"sizingX": "grow",
 					"dataSource": "Form:C1466.queryString",
-					"stroke": "#666666",
 					"class": "Texts13N",
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -374,8 +366,8 @@
 					"type": "listbox",
 					"top": 171,
 					"left": 19,
-					"width": 958,
-					"height": 482,
+					"width": 957,
+					"height": 480,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"resizingMode": "legacy",
@@ -408,6 +400,7 @@
 						"onHeaderClick",
 						"onBeginDragOver"
 					],
+					"right": 976,
 					"columns": [
 						{
 							"name": "Column1",
@@ -416,8 +409,8 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "left",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -428,7 +421,7 @@
 							"header": {
 								"name": "Header1",
 								"text": ":xliff:Number",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
@@ -441,7 +434,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column2",
@@ -450,8 +444,8 @@
 							"minWidth": 200,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -461,7 +455,7 @@
 							"header": {
 								"name": "Header2",
 								"text": ":xliff:Name",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
@@ -474,7 +468,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column3",
@@ -484,8 +479,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Currency",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -495,7 +490,7 @@
 							"header": {
 								"name": "Header3",
 								"text": ":xliff:City",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "left",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -507,7 +502,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column4",
@@ -518,8 +514,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Percent",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "center",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -530,7 +526,7 @@
 							"header": {
 								"name": "Header4",
 								"text": ":xliff:Date",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "center",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
@@ -543,7 +539,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column5",
@@ -554,8 +551,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Currency",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 13,
 							"events": [
@@ -565,7 +562,7 @@
 							"header": {
 								"name": "Header5",
 								"text": ":xliff:Total",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "right",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -577,7 +574,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column7",
@@ -589,8 +587,8 @@
 							"enterable": false,
 							"controlType": "checkbox",
 							"truncateMode": "none",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "center",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -601,7 +599,7 @@
 							"header": {
 								"name": "Header8",
 								"text": ":xliff:Paid",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "center",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -623,8 +621,8 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "center",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -635,7 +633,7 @@
 							"header": {
 								"name": "Header13",
 								"text": ":xliff:Date",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13,
 								"fontWeight": "bold"
@@ -646,7 +644,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column11",
@@ -657,8 +656,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"controlType": "checkbox",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "center",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -669,7 +668,7 @@
 							"header": {
 								"name": "Header14",
 								"text": ":xliff:ProForma",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13,
 								"fontWeight": "bold"
@@ -680,19 +679,20 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column12",
 							"dataSource": "This:C1470.Credit_Note",
 							"dataSourceTypeHint": "boolean",
-							"width": 60,
-							"minWidth": 10,
+							"width": 50,
+							"minWidth": 30,
 							"maxWidth": 32000,
 							"enterable": false,
 							"controlType": "checkbox",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "center",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -703,7 +703,7 @@
 							"header": {
 								"name": "Header15",
 								"text": ":xliff:CreditN",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13,
 								"fontWeight": "bold"
@@ -714,7 +714,8 @@
 								"stroke": "#212121",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						}
 					]
 				},
@@ -724,7 +725,7 @@
 					"left": 40,
 					"width": 221,
 					"height": 17,
-					"dataSource": "Util_GiveRecordCount (Form:C1466.displayedSelection;Form:C1466.selectedSubset)",
+					"dataSource": "Util_GiveRecordCount(Form:C1466.displayedSelection; Form:C1466.selectedSubset)",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -744,7 +745,6 @@
 						"$ref": "/SOURCES/tips.json#/Order By Extend"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Sort",
 					"icon": "/RESOURCES/Buttons/Products-OrderByAlt.png",
@@ -791,7 +791,6 @@
 						"$ref": "/SOURCES/tips.json#/Open"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
 					"focusable": false,
 					"text": ":xliff:Open Record",
 					"icon": "/RESOURCES/Buttons/invoices-readWrite.png",
@@ -814,8 +813,9 @@
 					"height": 288,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
+					"stroke": "automatic",
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"_FIELD_Totals_0": {
 					"type": "groupBox",
@@ -835,8 +835,9 @@
 					"height": 228,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
+					"stroke": "automatic",
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"Text9": {
 					"type": "text",
@@ -849,18 +850,6 @@
 					"fontWeight": "bold",
 					"text": ":xliff:INVOICE_LINES"
 				},
-				"_PROF_Round Rectangle10": {
-					"type": "rectangle",
-					"top": 356,
-					"left": 235,
-					"width": 128,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "#F2F2F2",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
 				"_FRST_FIRST_": {
 					"type": "button",
 					"top": 51,
@@ -871,7 +860,7 @@
 						"$ref": "/SOURCES/tips.json#/First"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
+					"stroke": "automatic",
 					"focusable": false,
 					"text": ":xliff:First",
 					"icon": "/RESOURCES/Buttons/invoices-first.png",
@@ -890,8 +879,9 @@
 					"height": 290,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"stroke": "#FFFFFF",
-					"borderRadius": 5
+					"stroke": "automatic",
+					"borderRadius": 5,
+					"fill": "automatic"
 				},
 				"Text2": {
 					"type": "text",
@@ -913,49 +903,12 @@
 					"fontWeight": "bold",
 					"text": ":xliff:Client Information"
 				},
-				"Round Rectangle4": {
-					"type": "rectangle",
-					"top": 192,
-					"left": 145,
-					"width": 128,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle5": {
-					"type": "rectangle",
-					"top": 282,
-					"left": 145,
-					"width": 268,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
-				"Round Rectangle7": {
-					"type": "rectangle",
-					"top": 222,
-					"left": 145,
-					"width": 68,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
-				},
 				"Text4": {
 					"type": "text",
 					"top": 196,
 					"left": 23,
 					"width": 114,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Date"
@@ -966,7 +919,6 @@
 					"left": 23,
 					"width": 114,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Payment Delay"
@@ -977,7 +929,6 @@
 					"left": 13,
 					"width": 124,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Payment Method"
@@ -1020,7 +971,7 @@
 						"$ref": "/SOURCES/tips.json#/Previous"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
+					"stroke": "automatic",
 					"focusable": false,
 					"text": ":xliff:Previous",
 					"icon": "/RESOURCES/Buttons/invoices-previous.png",
@@ -1041,7 +992,7 @@
 						"$ref": "/SOURCES/tips.json#/Next"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
+					"stroke": "automatic",
 					"focusable": false,
 					"text": ":xliff:Next",
 					"icon": "/RESOURCES/Buttons/invoices-next.png",
@@ -1062,7 +1013,7 @@
 						"$ref": "/SOURCES/tips.json#/Last"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
+					"stroke": "automatic",
 					"focusable": false,
 					"text": ":xliff:Last",
 					"icon": "/RESOURCES/Buttons/invoices-last.png",
@@ -1083,7 +1034,7 @@
 						"$ref": "/SOURCES/tips.json#/Delete"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
+					"stroke": "automatic",
 					"focusable": false,
 					"text": ":xliff:Delete",
 					"icon": "/RESOURCES/Buttons/invoices-delete.png",
@@ -1104,7 +1055,7 @@
 						"$ref": "/SOURCES/tips.json#/Cancel"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
+					"stroke": "automatic",
 					"focusable": false,
 					"text": ":xliff:Cancel",
 					"icon": "/RESOURCES/Buttons/invoices-cancel.png",
@@ -1125,7 +1076,7 @@
 						"$ref": "/SOURCES/tips.json#/Validate"
 					},
 					"class": "Texts11N",
-					"stroke": "#777777",
+					"stroke": "automatic",
 					"focusable": false,
 					"text": ":xliff:Validate",
 					"icon": "/RESOURCES/Buttons/invoices-confirm.png",
@@ -1149,7 +1100,7 @@
 					},
 					"class": "Texts11N",
 					"fontWeight": "bold",
-					"stroke": "#777777",
+					"stroke": "automatic",
 					"focusable": false,
 					"text": ":xliff:Unlock",
 					"icon": "/RESOURCES/Buttons/button-RO-RW.png",
@@ -1166,7 +1117,6 @@
 					"left": 113,
 					"width": 114,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Number"
@@ -1188,7 +1138,8 @@
 					"events": [
 						"onClick",
 						"onLongClick"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"_LIST_DEL_INVOICE_LINES": {
 					"type": "button",
@@ -1206,7 +1157,8 @@
 					"events": [
 						"onClick",
 						"onLongClick"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"_LIST+_TOOL_INVOICE_LINES": {
 					"type": "button",
@@ -1225,7 +1177,8 @@
 					"events": [
 						"onClick",
 						"onLongClick"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"_FIELDNE_Name_1": {
 					"type": "input",
@@ -1238,7 +1191,7 @@
 					"class": "Texts13N",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1257,7 +1210,7 @@
 					"class": "Texts13N",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1277,7 +1230,7 @@
 					"textAlign": "left",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1297,7 +1250,7 @@
 					"textAlign": "left",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1317,7 +1270,7 @@
 					"textAlign": "left",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1331,7 +1284,6 @@
 					"left": 510,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Name"
@@ -1342,7 +1294,6 @@
 					"left": 510,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Address"
@@ -1353,7 +1304,6 @@
 					"left": 620,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:City"
@@ -1364,7 +1314,6 @@
 					"left": 510,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:State"
@@ -1376,9 +1325,9 @@
 					"width": 88,
 					"height": 26,
 					"sizingX": "move",
-					"fill": "#BBBBBB",
-					"stroke": "#999999",
-					"strokeWidth": 2,
+					"fill": "automatic",
+					"stroke": "automatic",
+					"strokeWidth": 1,
 					"borderRadius": 5
 				},
 				"_ID_1": {
@@ -1396,7 +1345,7 @@
 					"fontWeight": "bold",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1410,7 +1359,6 @@
 					"left": 510,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Country"
@@ -1426,7 +1374,7 @@
 					"textAlign": "left",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1440,7 +1388,6 @@
 					"left": 510,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:ZIPCode"
@@ -1456,7 +1403,7 @@
 					"textAlign": "left",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1470,7 +1417,6 @@
 					"left": 510,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Phone"
@@ -1487,7 +1433,7 @@
 					"textAlign": "left",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1501,7 +1447,6 @@
 					"left": 720,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Mobile"
@@ -1518,7 +1463,7 @@
 					"textAlign": "left",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1532,7 +1477,6 @@
 					"left": 510,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Email"
@@ -1549,7 +1493,7 @@
 					"textAlign": "left",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -1563,7 +1507,6 @@
 					"left": 510,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Web"
@@ -1575,21 +1518,8 @@
 					"width": 54,
 					"height": 16,
 					"sizingX": "move",
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"text": ":xliff:days"
-				},
-				"Round Rectangle8": {
-					"type": "rectangle",
-					"top": 161,
-					"left": 145,
-					"width": 128,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "#F2F2F2",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
 				},
 				"_FIELD_Invoice_Number_": {
 					"type": "input",
@@ -1602,7 +1532,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -1620,7 +1550,7 @@
 					"dataSourceTypeHint": "date",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -1638,7 +1568,7 @@
 					"dataSourceTypeHint": "number",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"numberFormat": {
 						"$ref": "/SOURCES/filters.json#/Long"
@@ -1659,7 +1589,7 @@
 					"dataSourceTypeHint": "date",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -1691,7 +1621,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -1709,7 +1639,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"dragging": "custom",
 					"events": [
@@ -1741,7 +1671,7 @@
 					"class": "Texts13N",
 					"textAlign": "left",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"contextMenu": "none",
 					"numberFormat": {
 						"$ref": "/SOURCES/filters.json#/Long"
@@ -1757,22 +1687,9 @@
 					"left": 23,
 					"width": 113,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Number"
-				},
-				"Round Rectangle9": {
-					"type": "rectangle",
-					"top": 312,
-					"left": 145,
-					"width": 268,
-					"height": 39,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
 				},
 				"Text16": {
 					"type": "text",
@@ -1780,22 +1697,9 @@
 					"left": 13,
 					"width": 124,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Payment Reference"
-				},
-				"Round Rectangle12": {
-					"type": "rectangle",
-					"top": 252,
-					"left": 145,
-					"width": 128,
-					"height": 26,
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#D8DCE3",
-					"strokeWidth": 2,
-					"borderRadius": 5
 				},
 				"Text23": {
 					"type": "text",
@@ -1803,7 +1707,6 @@
 					"left": 23,
 					"width": 114,
 					"height": 16,
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:PaymentDate"
@@ -1866,8 +1769,8 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "left",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -1878,7 +1781,7 @@
 							"header": {
 								"name": "Header6",
 								"text": ":xliff:Line_NumberS",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
@@ -1888,10 +1791,11 @@
 							"footer": {
 								"name": "Footer6",
 								"timeFormat": "hh_mm_ss",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column6",
@@ -1902,8 +1806,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Long",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "center",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -1914,7 +1818,7 @@
 							"header": {
 								"name": "Header18",
 								"text": ":xliff:L_Product_ID",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "center",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -1923,10 +1827,11 @@
 							"footer": {
 								"name": "Footer18",
 								"timeFormat": "hh_mm_ss",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "_FIELD_Product_Ref_",
@@ -1935,8 +1840,8 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "left",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -1947,7 +1852,7 @@
 							"header": {
 								"name": "Header7",
 								"text": ":xliff:L_Product_Ref",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "left",
 								"verticalAlign": "middle",
 								"fontFamily": "Arial",
@@ -1957,10 +1862,11 @@
 							"footer": {
 								"name": "Footer7",
 								"timeFormat": "hh_mm_ss",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "_FIELD_Product_Name_",
@@ -1969,8 +1875,8 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "left",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -1981,7 +1887,7 @@
 							"header": {
 								"name": "Header9",
 								"text": ":xliff:Name",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "left",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -1990,11 +1896,12 @@
 							"footer": {
 								"name": "_TOTAL_TEXT_Quantity",
 								"timeFormat": "hh_mm_ss",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "right",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column9",
@@ -2005,8 +1912,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Long",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "right",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -2017,7 +1924,7 @@
 							"header": {
 								"name": "Header10",
 								"text": ":xliff:Qty",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "right",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -2028,11 +1935,12 @@
 								"dataSourceTypeHint": "number",
 								"numberFormat": "|Long",
 								"timeFormat": "hh_mm_ss",
-								"stroke": "#212121",
-								"fill": "#D8DCE3",
+								"stroke": "automatic",
+								"fill": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column14",
@@ -2043,8 +1951,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Currency",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "right",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -2055,7 +1963,7 @@
 							"header": {
 								"name": "Header12",
 								"text": ":xliff:PUP",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "right",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -2064,10 +1972,11 @@
 							"footer": {
 								"name": "Footer12",
 								"timeFormat": "hh_mm_ss",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column13",
@@ -2077,8 +1986,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Percent",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "right",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -2089,7 +1998,7 @@
 							"header": {
 								"name": "Header11",
 								"text": ":xliff:Discount",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "right",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -2098,10 +2007,11 @@
 							"footer": {
 								"name": "Footer11",
 								"timeFormat": "hh_mm_ss",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column15",
@@ -2112,8 +2022,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Percent",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "right",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -2124,7 +2034,7 @@
 							"header": {
 								"name": "Header16",
 								"text": ":xliff:L_Tax",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "right",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -2133,11 +2043,12 @@
 							"footer": {
 								"name": "_TOTAL_TEXT_Total",
 								"timeFormat": "hh_mm_ss",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "right",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column16",
@@ -2147,8 +2058,8 @@
 							"maxWidth": 32000,
 							"enterable": false,
 							"numberFormat": "|Currency",
-							"stroke": "#212121",
-							"alternateFill": "#F3F5FA",
+							"stroke": "automatic",
+							"alternateFill": "automaticAlternate",
 							"textAlign": "right",
 							"fontFamily": "Arial",
 							"fontSize": 13,
@@ -2159,7 +2070,7 @@
 							"header": {
 								"name": "Header17",
 								"text": ":xliff:Total",
-								"stroke": "#212121",
+								"stroke": "automatic",
 								"textAlign": "right",
 								"fontFamily": "Arial",
 								"fontSize": 13,
@@ -2170,11 +2081,12 @@
 								"dataSourceTypeHint": "number",
 								"numberFormat": "|Currency",
 								"timeFormat": "hh_mm_ss",
-								"stroke": "#212121",
-								"fill": "#D8DCE3",
+								"stroke": "automatic",
+								"fill": "automatic",
 								"fontFamily": "Arial",
 								"fontSize": 13
-							}
+							},
+							"truncateMode": "none"
 						}
 					]
 				},
@@ -2196,7 +2108,6 @@
 					"width": 18,
 					"height": 16,
 					"sizingX": "move",
-					"stroke": "#FFFFFF",
 					"class": "Texts13N",
 					"fontWeight": "bold",
 					"text": "ID:"
@@ -2214,7 +2125,7 @@
 					"class": "Texts13N",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"pictureFormat": "proportionalCenter",
 					"dragging": "custom",
@@ -2229,7 +2140,6 @@
 					"width": 94,
 					"height": 16,
 					"sizingX": "move",
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Total"
@@ -2247,7 +2157,7 @@
 					"fontWeight": "bold",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"numberFormat": {
@@ -2265,7 +2175,6 @@
 					"width": 94,
 					"height": 16,
 					"sizingX": "move",
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Total_Tax"
@@ -2283,7 +2192,7 @@
 					"fontWeight": "bold",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"numberFormat": {
@@ -2301,7 +2210,6 @@
 					"width": 94,
 					"height": 16,
 					"sizingX": "move",
-					"stroke": "#696969",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Total_Qty"
@@ -2319,7 +2227,7 @@
 					"fontWeight": "bold",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"numberFormat": {
@@ -2342,7 +2250,7 @@
 					"textAlign": "left",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"dragging": "custom",
@@ -2356,7 +2264,6 @@
 					"left": 510,
 					"width": 94,
 					"height": 16,
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Contact"
@@ -2375,19 +2282,8 @@
 					"method": "ObjectMethods/_NEWINV_CALL_Clients.4dm",
 					"events": [
 						"onClick"
-					]
-				},
-				"Round Rectangle6_CLI_": {
-					"type": "rectangle",
-					"top": 163,
-					"left": 708,
-					"width": 266,
-					"height": 25,
-					"visibility": "hidden",
-					"sizingX": "grow",
-					"fill": "#F3F5FA",
-					"stroke": "#D8DCE3",
-					"borderRadius": 5
+					],
+					"stroke": "automatic"
 				},
 				"_QUERY_CLI_": {
 					"type": "input",
@@ -2398,10 +2294,9 @@
 					"visibility": "hidden",
 					"sizingX": "grow",
 					"dataSource": "Form:C1466.queryClient",
-					"stroke": "#666666",
 					"class": "Texts13N",
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"hideFocusRing": true,
 					"contextMenu": "none",
 					"placeholder": ":xliff:Enter_Exp",
@@ -2420,7 +2315,6 @@
 					"width": 194,
 					"height": 46,
 					"visibility": "hidden",
-					"stroke": "#808080",
 					"class": "Texts13N",
 					"textAlign": "right",
 					"text": ":xliff:Enter_Anything"
@@ -2463,7 +2357,7 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"numberFormat": "|Long",
-							"alternateFill": "#D8DCE3",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 12,
 							"events": [
@@ -2481,7 +2375,8 @@
 								"timeFormat": "hh_mm_ss",
 								"fontFamily": "Arial",
 								"fontSize": 12
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column17",
@@ -2489,7 +2384,7 @@
 							"width": 239,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"alternateFill": "#D8DCE3",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 12,
 							"events": [
@@ -2507,7 +2402,8 @@
 								"timeFormat": "hh_mm_ss",
 								"fontFamily": "Arial",
 								"fontSize": 12
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column18",
@@ -2515,7 +2411,7 @@
 							"width": 122,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"alternateFill": "#D8DCE3",
+							"alternateFill": "automaticAlternate",
 							"fontFamily": "Arial",
 							"fontSize": 12,
 							"events": [
@@ -2533,7 +2429,8 @@
 								"timeFormat": "hh_mm_ss",
 								"fontFamily": "Arial",
 								"fontSize": 12
-							}
+							},
+							"truncateMode": "none"
 						}
 					]
 				},
@@ -2550,7 +2447,7 @@
 					"fontWeight": "bold",
 					"focusable": false,
 					"fill": "transparent",
-					"borderStyle": "none",
+					"borderStyle": "system",
 					"enterable": false,
 					"contextMenu": "none",
 					"numberFormat": {
@@ -2570,16 +2467,13 @@
 		"views": {
 			"View 1": {},
 			"View 2": {
-				"selectable": false,
 				"objects": [
 					"Round Rectangle2",
 					"Round Rectangle3"
 				]
 			},
 			"View 3": {
-				"selectable": false,
 				"objects": [
-					"Round Rectangle6_CLI_",
 					"_QUERY_CLI_",
 					"Text10_CLI_",
 					"_LB_CLI_"
@@ -2592,5 +2486,10 @@
 			"View 8": {},
 			"View 9": {}
 		}
+	},
+	"geometryStamp": 11,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }

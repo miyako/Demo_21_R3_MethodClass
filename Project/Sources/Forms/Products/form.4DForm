@@ -435,7 +435,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column2",
@@ -467,7 +468,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column3",
@@ -501,7 +503,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column4",
@@ -535,7 +538,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						}
 					]
 				},
@@ -1139,7 +1143,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						},
 						{
 							"name": "_FIELD_Value_",
@@ -1171,7 +1176,8 @@
 								"fontFamily": "Arial",
 								"fontSize": 13
 							},
-							"stroke": "automatic"
+							"stroke": "automatic",
+							"truncateMode": "none"
 						}
 					]
 				},

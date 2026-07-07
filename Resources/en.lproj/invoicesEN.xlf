@@ -340,7 +340,7 @@
 				</trans-unit>
 				<trans-unit resname="ProForma">
 					<source>ProForma</source>
-					<target>ProForma</target>
+					<target>P.F.</target>
 				</trans-unit>
 				<trans-unit resname="CreditNote">
 					<source>Credit Note</source>
@@ -388,7 +388,7 @@
 				</trans-unit>
 				<trans-unit resname="Pro Forma">
 					<source>Pro Forma</source>
-					<target>Pro Forma</target>
+					<target>P.F.</target>
 				</trans-unit>
 				<trans-unit resname="CreditNote">
 					<source>Credit Note</source>
@@ -1416,7 +1416,7 @@
 				</trans-unit>
 				<trans-unit resname="ProForma">
 					<source>ProForma</source>
-					<target>ProForma</target>
+					<target>P.F.</target>
 				</trans-unit>
 				<trans-unit resname="Payment_Delay">
 					<source>Payment Delay</source>
