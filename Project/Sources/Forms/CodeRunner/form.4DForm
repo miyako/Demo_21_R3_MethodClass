@@ -64,13 +64,14 @@
 					"borderStyle": "none",
 					"multiline": "yes",
 					"wordwrap": "automatic",
-					"contextMenu": "automatic",
+					"contextMenu": "none",
 					"placeholder": "Enter your 4D code here...",
 					"dragging": "none",
 					"dropping": "none",
 					"events": [
-						"onDataChange"
-					]
+						"onClick"
+					],
+					"method": "ObjectMethods/_CODE_INPUT_.4dm"
 				},
 				"_BTN_OPEN_FILE_": {
 					"type": "button",
