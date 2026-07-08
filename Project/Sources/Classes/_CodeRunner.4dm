@@ -83,7 +83,7 @@ Function claude($claude : 4D.File)
 		$command:="cd "+This.escape($folder.path)+"\n"
 		
 		$folder:=Folder(Temporary folder; fk platform path).folder(Generate UUID)
-		$folder:=Folder(fk desktop folder)
+		//$folder:=Folder(fk desktop folder)
 		$folder.create()
 		
 		$command+="claude\n"
