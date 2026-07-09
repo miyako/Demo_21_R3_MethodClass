@@ -103,7 +103,7 @@
 					"left": 455,
 					"width": 200,
 					"height": 16,
-					"sizingY": "move",
+					"sizingY": "fixed",
 					"class": "Texts13N",
 					"fontWeight": "bold",
 					"sizingX": "move"
@@ -115,7 +115,7 @@
 					"width": 240,
 					"height": 62,
 					"sizingX": "move",
-					"sizingY": "move",
+					"sizingY": "grow",
 					"dataSource": "Form:C1466.resultOutput",
 					"class": "Texts13N code",
 					"fontSize": 12,
@@ -123,10 +123,11 @@
 					"borderStyle": "system",
 					"multiline": "yes",
 					"enterable": false,
-					"contextMenu": "none",
+					"contextMenu": "automatic",
 					"dragging": "none",
 					"dropping": "none",
-					"focusable": false
+					"focusable": true,
+					"hideFocusRing": true
 				},
 				"Label_Status": {
 					"type": "text",
@@ -134,7 +135,7 @@
 					"left": 455,
 					"width": 200,
 					"height": 16,
-					"sizingY": "move",
+					"sizingY": "fixed",
 					"class": "Texts13N",
 					"fontWeight": "bold",
 					"sizingX": "move"
@@ -146,7 +147,7 @@
 					"width": 240,
 					"height": 62,
 					"sizingX": "move",
-					"sizingY": "move",
+					"sizingY": "fixed",
 					"dataSource": "Form:C1466.statusText",
 					"class": "Texts13N code",
 					"fontSize": 12,
@@ -154,10 +155,11 @@
 					"borderStyle": "system",
 					"multiline": "yes",
 					"enterable": false,
-					"contextMenu": "none",
+					"contextMenu": "automatic",
 					"dragging": "none",
 					"dropping": "none",
-					"focusable": false
+					"focusable": true,
+					"hideFocusRing": true
 				}
 			}
 		},
@@ -238,7 +240,7 @@
 			}
 		}
 	],
-	"geometryStamp": 122,
+	"geometryStamp": 129,
 	"$4d": {
 		"version": "1",
 		"kind": "form"
